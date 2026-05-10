@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patria y familia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <header>
+        <img src="img/logoluzu.png" alt="LUZU!" class="header-logo" />
+    </header>
+
+    <section class="hero">
+    <div class="hero-box">
+        <img src="img/fotoizquierda.png" alt="Artistas izquierda" class="hero-img-izq" />
+        <div class="hero-texto">
+            <h1>LA COMUNIDAD DE PATRIA Y FAMILIA <br> SE ENCUENTRA EN EL TEATRO</h1>
+            <p>Nos encontramos en el <strong>Gran Rex</strong> y queremos que lo vivas con nosotros. Tenemos <strong>50 entradas para regalar.</strong></p>
+            <p class="fecha"><strong>Sabado 2 de mayo <br> 20 hs</strong></p>
+           <div style="display: flex; justify-content: center;">
+            <button class="btn-arcoiris" onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})">Quiero mi entrada</button> </div>
+            <img src="img/fotogrupomobile.png" alt="Artistas" class="hero-img-mobile" />
+        </div>
+        <img src="img/fotoderecha.png" alt="Artistas derecha" class="hero-img-der" />
+    </div>
+</section>
+    <section class="como-funciona">
+        <h2>¿CÓMO FUNCIONA?</h2>
+        <div class="pasos">
+            <div class="paso">
+                <div class="paso-num">1</div>
+                <p>Completá el formulario con tus datos</p>
+            </div>
+            <div class="paso">
+                <div class="paso-num">2</div>
+                <p>Si formas parte de las primeras 50 personas en llenar el formulario recibiras el QR en tu casilla de correo </p>
+            </div>
+            <div class="paso">
+                <div class="paso-num">3</div>
+                <p>Presentá tu QR el día del show y ¡listo!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="talentos">
+        <h2>LOS QUE LO HACEN POSIBLE</h2>
+
+        <p class="subtitulo">Talentos</p>
+        <div class="talentos-grid">
+            <div class="talento-card"><img src="img/fede.png" alt="Fede" /></div>
+            <div class="talento-card"><img src="img/anita.png" alt="Anita" /></div>
+            <div class="talento-card"><img src="img/cami.png" alt="Cami" /></div>
+            <div class="talento-card"><img src="img/lucas.png" alt="Lucas" /></div>
+            <div class="talento-card"><img src="img/juli.png" alt="Juli" /></div>
+        </div>
+
+        <p class="subtitulo">Talentitos</p>
+        <div class="talentos-grid">
+            <div class="talento-card"><img src="img/ana.png" alt="Ana" /></div>
+            <div class="talento-card"><img src="img/fefe.png" alt="Fefe" /></div>
+            <div class="talento-card"><img src="img/sunset.png" alt="Sunset" /></div>
+            <div class="talento-card"><img src="img/antuan.png" alt="Antuan" /></div>
+            <div class="talento-card"><img src="img/manuchi.png" alt="Manuchi" /></div>
+        </div>
+
+        <p class="talentos-copy">Talentos y talentitos ya están listos para el show<br>Ahora solo falta alguien más en el equipo: vos</p>
+    </section>
+
+    <section class="acompananos">
+        <h2>ACOMPAÑANOS</h2>
+        <div class="acompananos-img">
+            <img src="img/fotogrupo.png" alt="Acompañanos" />
+        </div>
+        <ul class="acompananos-lista">
+            <li>Reíte en vivo con Patria y Familia</li>
+            <li>Conocé a otros patriotas</li>
+            <li>Viví el programa desde el teatro</li>
+            <li>Sé parte del show</li>
+        </ul>
+        <p class="acompananos-copy">Si llegaste hasta acá, es porque probablemente ya formes parte de esta familia.</p>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <h2>COMPLETÁ EL FORMULARIO Y ACOMPAÑANOS</h2>
+
+        <div class="form-group">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" placeholder="Tu nombre completo" />
+        </div>
+
+        <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" placeholder="Tu edad" min="1" max="120" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" placeholder="tu@email.com" />
+        </div>
+
+        <button class="btn-arcoiris" onclick="enviarFormulario()">Enviar</button>
+
+        <div class="gracias" id="gracias" style="display:none;">
+            <h3 id="mensaje-gracias"></h3>
+        </div>
+    </section>
+<footer>
+    <div class="footer-links">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Accesibilidad</a>
+        <a href="#">Ayuda y soporte</a>
+        <a href="#">Opciones de cookies</a>
+    </div>
+   <div class="footer-redes">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+    <p class="footer-copy">© 2026 LuzuTV! - Patria y Familia</p>
+</footer>
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
